@@ -1,5 +1,5 @@
 #input number greater than one
-n=int(input("Enter the value of n"))
+n=int(input("Enter the value of n "))
 
 #print the numbers from n to 1
 print("numbers from {0} to {1} are:".format(n,1))

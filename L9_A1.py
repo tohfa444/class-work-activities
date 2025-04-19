@@ -11,7 +11,3 @@ else:
         print("you are allowed")
     else:
         print("You are not allowed")
-
-
-
-

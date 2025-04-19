@@ -11,7 +11,4 @@ print("Hello world\n")
 print("Hello", 4)
 
 #End argument of print statement
-print("Welcome to ",end="*")
-
-
-
+print("Welcome to ",end="our institute")

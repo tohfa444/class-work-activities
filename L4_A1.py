@@ -10,5 +10,3 @@ print("the sum of all the three trees is ",sum_)
 #findint the average of trees
 average=sum_/3
 print("the average all the trees is ",average)
-
-
