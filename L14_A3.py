@@ -25,3 +25,4 @@ for i in range(1,halfDiamondRow):
         print(end=str(num))
         num=num+1
     print()
+
