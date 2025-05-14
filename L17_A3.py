@@ -6,9 +6,7 @@ def check(n):
         return("Negative numbers can't have factorials")
     else:
         f=1
-        for i in range(n,1): 
+        for i in range(n,1,-1): 
             f=f*i
         return(f)
 print(check(n))
-
-
