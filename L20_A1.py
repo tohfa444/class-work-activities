@@ -6,6 +6,8 @@ while playing:
     guess=int(input("Enter a any guess from 1 to 10 :"))
     if number==guess:
         print("You win the game and the number was",guess)
+        print("Goodbye")
         break
     else:
         print("Your guess is not currect try again")
+
