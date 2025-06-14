@@ -10,8 +10,6 @@ def palindrom(r):
     return True
 if palindrom(r):
     print("Tuple is flip flop")
-elif palindrom(r):
-    print("Tuple is flip flop")
 else:
     print("Tuple is not flip flop")
 
