@@ -17,3 +17,6 @@ slice_=tup_int[2:4]
 print(slice_)
 
 print(tup_int[1:])
+
+nest_tup=(1,2,("a","b"),[4,5,"nesting"])
+print(nest_tup[3][2])
