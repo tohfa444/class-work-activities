@@ -12,4 +12,3 @@ if palindrom(r):
     print("Tuple is flip flop")
 else:
     print("Tuple is not flip flop")
-    
