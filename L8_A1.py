@@ -12,3 +12,4 @@ if name=="tohfa" or name=="alex" and age>=16:
     print("Hello welcome")
 else:
     print("Goodbye")
+    

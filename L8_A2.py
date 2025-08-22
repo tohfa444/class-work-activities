@@ -6,3 +6,4 @@ if num_n%num_d==0:
     print(f"{num_n} is divisible by {num_d}")
 else:
     print(f"{num_n} is not divisible by {num_d}")
+    

@@ -24,3 +24,4 @@ elif average>=0 and average<=31:
     print("Your grade is E1")
 else:
     print("invalid input")
+    

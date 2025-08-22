@@ -10,5 +10,3 @@ if ans=="input":
     print("correct")
 else:
     print(f"The answer is 'input' not {ans}")
-
-#"f" this is formating str     

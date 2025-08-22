@@ -7,3 +7,4 @@ if selling_price>cost_price:
     print(profit)
 else:
     print("No profit")
+    
