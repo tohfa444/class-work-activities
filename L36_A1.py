@@ -62,3 +62,31 @@ while running:
 
     pygame.display.flip()
     clock.tick(60)
+
+# Main game loop
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_x):
+            running = False
+
+    if not won:
+        keys = pygame.key.get_pressed()
+        # Reads which arrow keys are being pressed.
+        x_change = (keys[pygame.K_RIGHT] - keys[pygame.K_LEFT]) * MOVEMENT_SPEED
+        y_change = (keys[pygame.K_DOWN] - keys[pygame.K_UP]) * MOVEMENT_SPEED
+        sprite1.move(x_change, y_change)
+
+        # Checks if the player (sprite1) touches another object (sprite2).
+        if sprite1.rect.colliderect(sprite2.rect):
+            all_sprites.remove(sprite2)
+            won = True
+
+    # Drawing
+    screen.blit(background_image, (0, 0))
+    all_sprites.draw(screen)
+
+    # Display win message
+    if won:
+        win_text = font.render("You win!", True, pygame.Color('black'))
+        screen.blit(win_text, ((SCREEN_WIDTH - win_text.get_width()) // 2,
+                               (SCREEN_HEIGHT - win_text.get_height()) // 2))
